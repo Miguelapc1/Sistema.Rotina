@@ -8,19 +8,19 @@ O projeto reúne tarefas, hábitos, calendário e planejamento semanal em uma ú
 
 ### Dashboard
 
-![Dashboard](./docs/images/dashboard.png)
+![Dashboard](./docs/imagens/dashboard.png)
 
 ### Tarefas
 
-![Tarefas](./docs/images/tarefas.png)
+![Tarefas](./docs/imagens/tarefas.png)
 
 ### Hábitos
 
-![Hábitos](./docs/images/habitos.png)
+![Hábitos](./docs/imagens/habitos.png)
 
 ### Calendário
 
-![Calendário](./docs/images/calendario.png)
+![Calendário](./docs/imagens/calendario.png)
 
 ---
 
