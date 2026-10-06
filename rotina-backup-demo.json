@@ -1,0 +1,451 @@
+{
+  "tasks": [
+    {
+      "id": "0r0wynys",
+      "title": "Estudar programação",
+      "notes": "Continuar o módulo de React.",
+      "date": "2026-10-05",
+      "time": "07:30",
+      "duration": 60,
+      "categoryId": "estudos",
+      "priority": "alta",
+      "period": "manha",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": true,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "96rmbt1l",
+      "title": "Revisar projeto pessoal",
+      "date": "2026-10-05",
+      "time": "09:00",
+      "duration": 45,
+      "categoryId": "projetos",
+      "priority": "normal",
+      "period": "manha",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "iue4b4dh",
+      "title": "Alongar e tomar café com calma",
+      "date": "2026-10-05",
+      "time": "06:45",
+      "duration": 30,
+      "categoryId": "pessoal",
+      "priority": "baixa",
+      "period": "manha",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [
+        "2026-10-05"
+      ],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "g41exmxi",
+      "title": "Fazer atividade da faculdade",
+      "notes": "Entrega até sexta.",
+      "date": "2026-10-05",
+      "time": "14:00",
+      "duration": 90,
+      "categoryId": "estudos",
+      "priority": "urgente",
+      "period": "tarde",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": true,
+      "urgent": true,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "0d8oon9e",
+      "title": "Treinar na academia",
+      "date": "2026-10-05",
+      "time": "17:30",
+      "duration": 60,
+      "categoryId": "saude",
+      "priority": "alta",
+      "period": "tarde",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": true,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "xnzgdk4r",
+      "title": "Organizar o quarto",
+      "date": "2026-10-05",
+      "time": "16:00",
+      "duration": 30,
+      "categoryId": "casa",
+      "priority": "baixa",
+      "period": "tarde",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [
+        "2026-10-05"
+      ],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "drhkg1fo",
+      "title": "Ler 20 páginas",
+      "date": "2026-10-05",
+      "time": "21:00",
+      "duration": 30,
+      "categoryId": "pessoal",
+      "priority": "normal",
+      "period": "noite",
+      "repeat": {
+        "type": "diario"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "iqpzu090",
+      "title": "Planejar o dia seguinte",
+      "date": "2026-10-05",
+      "time": "22:00",
+      "duration": 30,
+      "categoryId": "pessoal",
+      "priority": "normal",
+      "period": "noite",
+      "repeat": {
+        "type": "diario"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "9pu73jqm",
+      "title": "Reunião de alinhamento",
+      "date": "2026-10-07",
+      "time": "10:30",
+      "duration": 45,
+      "categoryId": "trabalho",
+      "priority": "alta",
+      "period": "manha",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": true,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "mnczsd7r",
+      "title": "Comprar itens da casa",
+      "date": "2026-10-06",
+      "time": "15:00",
+      "duration": 30,
+      "categoryId": "casa",
+      "priority": "normal",
+      "period": "tarde",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": false,
+      "urgent": false,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "gksxoeau",
+      "title": "Enviar relatório semanal",
+      "date": "2026-10-08",
+      "time": "11:00",
+      "duration": 30,
+      "categoryId": "trabalho",
+      "priority": "urgente",
+      "period": "manha",
+      "repeat": {
+        "type": "nunca"
+      },
+      "important": true,
+      "urgent": true,
+      "completedDates": [],
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    }
+  ],
+  "habits": [
+    {
+      "id": "mll6od3r",
+      "name": "Beber 2L de água",
+      "description": "Hidratação ao longo do dia.",
+      "icon": "droplet",
+      "categoryId": "saude",
+      "color": "var(--chart-3)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "2L por dia",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "t1luq45d",
+      "name": "Meditar 10 minutos",
+      "description": "Respiração e foco.",
+      "icon": "brain",
+      "categoryId": "saude",
+      "color": "var(--chart-5)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "10 min",
+      "time": "07:00",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "wlk56fo7",
+      "name": "Treinar",
+      "description": "Musculação ou cardio.",
+      "icon": "dumbbell",
+      "categoryId": "saude",
+      "color": "var(--chart-2)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "1x por dia",
+      "time": "18:00",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "m1j4v38p",
+      "name": "Ler 20 páginas",
+      "description": "Leitura antes de dormir.",
+      "icon": "book",
+      "categoryId": "pessoal",
+      "color": "var(--chart-4)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "20 páginas",
+      "time": "21:30",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "1jxqxqb4",
+      "name": "Estudar inglês",
+      "description": "Prática diária de idioma.",
+      "icon": "languages",
+      "categoryId": "estudos",
+      "color": "var(--chart-1)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "30 min",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    },
+    {
+      "id": "qzth4wwb",
+      "name": "Estudar programação",
+      "description": "Prática de código.",
+      "icon": "code",
+      "categoryId": "estudos",
+      "color": "var(--chart-1)",
+      "frequency": {
+        "type": "diario"
+      },
+      "goal": "1h",
+      "createdAt": "2026-10-05T17:38:07.807Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "trabalho",
+      "name": "Trabalho",
+      "color": "var(--chart-1)"
+    },
+    {
+      "id": "estudos",
+      "name": "Estudos",
+      "color": "var(--chart-3)"
+    },
+    {
+      "id": "pessoal",
+      "name": "Pessoal",
+      "color": "var(--chart-5)"
+    },
+    {
+      "id": "casa",
+      "name": "Casa",
+      "color": "var(--chart-4)"
+    },
+    {
+      "id": "saude",
+      "name": "Saúde",
+      "color": "var(--chart-2)"
+    },
+    {
+      "id": "projetos",
+      "name": "Projetos",
+      "color": "var(--chart-1)"
+    }
+  ],
+  "habitLogs": {
+    "mll6od3r": [
+      "2026-09-08",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-20",
+      "2026-09-21",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-26",
+      "2026-09-27",
+      "2026-09-28",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-05"
+    ],
+    "t1luq45d": [
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-19",
+      "2026-09-20",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-27",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-02",
+      "2026-10-03",
+      "2026-10-05"
+    ],
+    "wlk56fo7": [
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-04",
+      "2026-10-05"
+    ],
+    "m1j4v38p": [
+      "2026-09-08",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-20",
+      "2026-09-21",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-27",
+      "2026-09-28",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-05"
+    ],
+    "1jxqxqb4": [
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-19",
+      "2026-09-20",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-26",
+      "2026-09-27",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-02",
+      "2026-10-03",
+      "2026-10-04"
+    ],
+    "qzth4wwb": [
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-03",
+      "2026-10-05"
+    ]
+  },
+  "settings": {
+    "theme": "dark",
+    "firstDayOfWeek": 1,
+    "timeFormat": "24h",
+    "notifications": true,
+    "name": ""
+  }
+}
