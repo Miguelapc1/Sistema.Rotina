@@ -1,68 +1,78 @@
-# Rotina — Organização pessoal, tarefas e hábitos
+# Rotina
 
-Aplicativo web completo e responsivo para organizar rotina, tarefas e hábitos do dia a dia. Interface em português (pt-BR) com tema escuro preto profundo (padrão) e tema claro.
+Aplicação web para organização pessoal, gerenciamento de tarefas e acompanhamento de hábitos.
+
+O projeto reúne tarefas, hábitos, calendário e planejamento semanal em uma única interface, com suporte a armazenamento local e sincronização com Supabase.
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard](./docs/images/dashboard.png)
+
+### Tarefas
+
+![Tarefas](./docs/images/tarefas.png)
+
+### Hábitos
+
+![Hábitos](./docs/images/habitos.png)
+
+### Calendário
+
+![Calendário](./docs/images/calendario.png)
+
+---
 
 ## Funcionalidades
 
-- **Hoje (`/`)** — visão do dia com saudação, progresso, tarefas divididas por período (manhã, tarde, noite) e painel de hábitos com sequência (streak).
-- **Tarefas (`/tarefas`)** — busca, filtros por categoria, lista completa e matriz de prioridades (Eisenhower).
-- **Hábitos (`/habitos`)** — grade mensal de conclusões, sequência atual/recorde, consistência de 30 dias e gestão de hábitos. Inclui a página `/habitos/como-funcionam` explicando como funciona.
-- **Calendário (`/calendario`)** — visualizações de dia, semana e mês com navegação e tarefas coloridas por categoria.
-- **Planejamento (`/planejamento`)** — grade da semana com resumo semanal, progresso e hábitos agendados.
-- **Estatísticas (`/estatisticas`)** — gráficos de atividade dos últimos 30 dias, consistência por hábito e rankings.
-- **Configurações (`/configuracoes`)** — perfil, tema claro/escuro, início da semana, formato de hora, categorias personalizadas, backup (exportar/importar JSON) e redefinição dos dados de demonstração.
+- Dashboard com resumo das atividades do dia
+- Gerenciamento de tarefas e categorias
+- Matriz de prioridades (Eisenhower)
+- Criação e acompanhamento de hábitos
+- Controle de sequência e consistência
+- Calendário com visualização diária, semanal e mensal
+- Planejamento semanal
+- Estatísticas dos últimos 30 dias
+- Tema claro e escuro
+- Exportação e importação de dados em JSON
+- Dados de demonstração para testes
 
-## Como funciona
+### Conta e sincronização
 
-Os dados ficam salvos no navegador (localStorage) — não é necessário login nem conta. O app já vem com **dados de demonstração** (tarefas, hábitos, categorias e histórico de 28 dias) para você explorar; em **Configurações → Meus dados** você pode exportar um backup JSON, importar um backup ou restaurar a demonstração.
+O sistema pode ser utilizado sem cadastro, mantendo os dados no `localStorage`.
 
-## Rodando localmente
+Quando conectado ao Supabase, o usuário pode fazer login e manter os dados sincronizados na nuvem.
 
-```sh
-git clone <este-repositorio>
-cd rotina
-npm i
-npm run dev
-```
+A autenticação suporta:
 
-Abra `http://localhost:5173` (ou a porta indicada no terminal).
+- E-mail e senha
+- Google
 
-## Dados de demonstração
-
-O arquivo `rotina-backup-demo.json` contém um backup pronto dos dados de demonstração. Para carregá-lo no app, abra **Configurações → Meus dados → Importar** e selecione o arquivo.
-
-## Estrutura do projeto
-
-```
-src/
-  components/      # UI reutilizável (shell, dialogs, cards, ícones)
-  components/ui/   # Componentes base (shadcn/radix)
-  lib/             # Tipos, store (Context + localStorage), seed, datas
-  routes/          # Páginas (TanStack Router com file-based routing)
-  styles.css       # Design system (tokens oklch, temas claro/escuro)
-```
+---
 
 ## Tecnologias
 
-- TanStack Start + TanStack Router
-- React 19 + TypeScript
-- Tailwind CSS v4 (tokens semânticos em oklch)
-- Recharts (gráficos) · date-fns · lucide-react · sonner
+- React 19
+- TypeScript
+- TanStack Start
+- TanStack Router
+- Tailwind CSS v4
+- Vite
+- Supabase
+- PostgreSQL
+- Recharts
+- date-fns
+- Lucide React
+- Sonner
 
-## Banco de dados (Lovable Cloud / Supabase)
+---
 
-O app agora salva os dados na nuvem quando o usuário está conectado.
+## Banco de dados
 
-- **Login:** página `/entrar` (menu "Conta na nuvem") com e-mail/senha e Google.
-- **Tabela `public.user_data`:** `user_id uuid PK`, `data jsonb` (tarefas, hábitos, categorias e configurações), `updated_at timestamptz`.
-- **Segurança (RLS):** cada usuário só lê e grava a própria linha (`auth.uid() = user_id`).
-- **Sincronização:** ao entrar, os dados da nuvem são carregados; cada alteração é salva automaticamente (~1s). Sem login, o app continua funcionando com armazenamento local (localStorage).
-- **Migração SQL:** veja `supabase/migrations/` ou `drizzle/migrations/` no projeto.
+A persistência em nuvem utiliza Supabase com PostgreSQL.
 
-### Variáveis de ambiente (`.env`)
-```
-VITE_SUPABASE_URL=...
-VITE_SUPABASE_PUBLISHABLE_KEY=...
-VITE_SUPABASE_PROJECT_ID=...
-```
-Para usar seu próprio projeto Supabase, crie o projeto, rode o SQL da migração e preencha essas variáveis.
+Os dados da aplicação são armazenados na tabela:
+
+```text
+public.user_data
