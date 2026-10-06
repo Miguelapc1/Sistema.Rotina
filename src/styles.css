@@ -167,11 +167,25 @@
     border-color: var(--color-border);
   }
 
+  html {
+    background-color: var(--color-background);
+  }
+
   body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0;
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+  }
+
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--color-background);
   }
 }
 
